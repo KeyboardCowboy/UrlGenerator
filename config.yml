@@ -1,54 +1,21 @@
 # List the data sources used to create urls.
 urlFile: 'urls.txt'
 sources:
-  cats: 'data/cat.csv'
-  geos: 'data/geo.csv'
-  sps: 'data/sps.txt'
+  urls: 'data/urls.csv'
 
 hosts:
-  local: 'http://al.dev'
-  dev: 'http://angiesmr2dev.prod.acquia-sites.com'
-  dev2: 'http://angiesmr2dev2.prod.acquia-sites.com'
-  stage: 'http://angiesmr2stg.prod.acquia-sites.com'
-  prod: 'http://angiesmr2.prod.acquia-sites.com'
+  local: 'http://localhost'
 
 profiles:
   test:
-    basePath: '/companylist/'
+    basePath: '/'
     host: local
     sourcePct:
       sps: .5
     settings:
       useRootUrls: true
-      pcts:
-        state: .05
-        city: .15
-        geoCat: .3
-        fullGeo: .25
-  full:
-    basePath: '/companylist/'
-    host: local
-    sourcePct:
-      sps: .5
-    settings:
-      useRootUrls: true
-      pcts:
-        state: .05
-        city: .15
-        geoCat: .3
-        fullGeo: .25
-  sps-new:
-    basePath: '/companylist/new/'
-    host: local
-    sourcePct:
-      sps: 1
-  sps-old:
-    basePath: '/companylist/'
-    host: local
-    sourcePct:
-      sps: 1
 
 # Default arg values.
 defaults:
-  profile: full
-  count: 100
+  profile: test
+  count: 10
