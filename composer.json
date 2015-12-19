@@ -1,0 +1,14 @@
+{
+    "name": "keyboardcowboy/url-generator",
+    "description": "Generate lists of random URLs for load testing.",
+    "license": "GPL-2.0+",
+    "require": {
+        "symfony/yaml": "~3.0"
+    },
+    "authors": [
+        {
+            "name": "KeyboardCowboy",
+            "email": "chris@lullabot.com"
+        }
+    ]
+}
