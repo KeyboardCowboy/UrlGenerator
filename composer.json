@@ -10,5 +10,9 @@
             "name": "KeyboardCowboy",
             "email": "chris@lullabot.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": { "KeyboardCowboy\\UrlGenerator\\": "" }
+    },
+    "minimum-stability": "dev"
 }

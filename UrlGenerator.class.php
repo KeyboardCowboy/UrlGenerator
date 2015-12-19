@@ -5,7 +5,7 @@
  */
 
 // Load composer libraries.
-require_once './vendor/autoload.php';
+namespace KeyboardCowboy\UrlGenerator;
 
 use Symfony\Component\Yaml\Yaml;
 
